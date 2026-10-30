@@ -4,8 +4,8 @@
 
 replicaCount: 1
 
-image:
-  repository: 183004894778.dkr.ecr.us-east-1.amazonaws.com/narasimha/sample-repo:latest
+image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+  repository: ""
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
