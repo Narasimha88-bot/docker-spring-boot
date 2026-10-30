@@ -59,7 +59,7 @@ pipeline {
         stage('Helm Package') {
             steps {
                 sh '''
-                helm lint springboot
+                helm lint mychart
                 helm package mychart
                 '''
             }
