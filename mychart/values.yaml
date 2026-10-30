@@ -4,7 +4,7 @@
 
 replicaCount: 1
 
-image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+image:
   repository: ""
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
