@@ -60,7 +60,7 @@ pipeline {
             steps {
                 sh '''
                 helm lint springboot
-                helm package springboot
+                helm package mychart
                 '''
             }
         }
