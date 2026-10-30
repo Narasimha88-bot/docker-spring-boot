@@ -69,8 +69,8 @@ pipeline {
             steps {
                 sh '''
                 aws eks update-kubeconfig \
-                  --region us-east-1 \
-                  --name my-eks-cluster
+                  --region ap-south-1 \
+                  --name k8s-class
 
                 helm upgrade --install myrelease-21 springboot-0.1.0.tgz \
                   --namespace dev \
